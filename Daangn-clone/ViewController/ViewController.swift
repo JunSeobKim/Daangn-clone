@@ -6,16 +6,22 @@
 //
 
 import UIKit
-
-class ViewController: UIViewController {
+import Floaty
+class ViewController: UIViewController, FloatyDelegate {
     
     var homeModel = HomeModel()
-
+    var floaty = Floaty()
+    
     @IBOutlet weak var homeTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "main-logo"), style: .plain, target: self, action: nil)
+        leftBarButtonItem.tintColor = UIColor.black
+        navigationItem.leftBarButtonItem = leftBarButtonItem
+        
         setupTableView()
+        layoutFAB()
     }
     
     private func setupTableView() {
@@ -29,7 +35,24 @@ class ViewController: UIViewController {
             forCellReuseIdentifier: "homeCell"
         )
     }
-
+    
+    func layoutFAB() {
+        floaty.buttonImage = UIImage(named: "custom-add")
+        floaty.buttonColor = UIColor.orange
+//        floaty.hasShadow = false
+//        floaty.layer.shadowPath = UIBezierPath(rect: floaty.bounds).cgPath
+        floaty.layer.shadowPath = UIBezierPath(roundedRect: floaty.bounds, cornerRadius: floaty.layer.cornerRadius).cgPath
+        floaty.addItem("내 물건 팔기", icon: UIImage(named: "sellItem")) { item in
+          let alert = UIAlertController(title: "하는중", message: "아직 다 못함 ㅠ", preferredStyle: .alert)
+          alert.addAction(UIAlertAction(title: "학인", style: .default, handler: nil))
+          self.present(alert, animated: true, completion: nil)
+        }
+        
+        floaty.paddingY += tabBarController!.tabBar.bounds.size.height
+        floaty.fabDelegate = self
+        self.view.addSubview(floaty)
+      
+    }
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
@@ -45,5 +68,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.updateUI(cellData: homeModel.getCellData(index: indexPath.row))
         
         return cell
+    }
+    // swipe delete
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            homeModel.deleteCellData(index: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
     }
 }

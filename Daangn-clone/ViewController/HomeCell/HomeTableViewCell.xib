@@ -20,9 +20,14 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Cc-fX-JUo">
                         <rect key="frame" x="10" y="10" width="120" height="120"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="120" id="PUx-eU-uTV"/>
                             <constraint firstAttribute="width" constant="120" id="Xnp-PQ-5Ew"/>
+                            <constraint firstAttribute="height" constant="120" id="rua-XM-Hde"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="책상" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wN1-TM-QCn">
                         <rect key="frame" x="148" y="10" width="132" height="20.5"/>

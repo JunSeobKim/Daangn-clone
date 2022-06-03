@@ -16,6 +16,13 @@
 		6EA5974628454A7A00DD559A /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA5974528454A7A00DD559A /* HomeModel.swift */; };
 		6EBE3DCE28489CA200E9B255 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBE3DCC28489CA200E9B255 /* HomeTableViewCell.swift */; };
 		6EBE3DCF28489CA200E9B255 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EBE3DCD28489CA200E9B255 /* HomeTableViewCell.xib */; };
+		6EBE3DD12849737C00E9B255 /* LifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBE3DD02849737C00E9B255 /* LifeViewController.swift */; };
+		6EBE3DD428497C9100E9B255 /* LifeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBE3DD228497C9100E9B255 /* LifeCollectionViewCell.swift */; };
+		6EBE3DD528497C9100E9B255 /* LifeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EBE3DD328497C9100E9B255 /* LifeCollectionViewCell.xib */; };
+		6EBE3DD72849BECD00E9B255 /* LifeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBE3DD62849BECD00E9B255 /* LifeModel.swift */; };
+		6EBE3DDC2849C32800E9B255 /* LifeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBE3DDA2849C32800E9B255 /* LifeTableViewCell.swift */; };
+		6EBE3DDD2849C32800E9B255 /* LifeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EBE3DDB2849C32800E9B255 /* LifeTableViewCell.xib */; };
+		D9A30C14076908B008FB5452 /* Pods_Daangn_clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0F7DF1AF6CE52786075DEB /* Pods_Daangn_clone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +37,15 @@
 		6EA5974528454A7A00DD559A /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		6EBE3DCC28489CA200E9B255 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		6EBE3DCD28489CA200E9B255 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		6EBE3DD02849737C00E9B255 /* LifeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeViewController.swift; sourceTree = "<group>"; };
+		6EBE3DD228497C9100E9B255 /* LifeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCollectionViewCell.swift; sourceTree = "<group>"; };
+		6EBE3DD328497C9100E9B255 /* LifeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LifeCollectionViewCell.xib; sourceTree = "<group>"; };
+		6EBE3DD62849BECD00E9B255 /* LifeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeModel.swift; sourceTree = "<group>"; };
+		6EBE3DDA2849C32800E9B255 /* LifeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeTableViewCell.swift; sourceTree = "<group>"; };
+		6EBE3DDB2849C32800E9B255 /* LifeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LifeTableViewCell.xib; sourceTree = "<group>"; };
+		7E80C16FF481285C0D3FE07F /* Pods-Daangn-clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daangn-clone.release.xcconfig"; path = "Target Support Files/Pods-Daangn-clone/Pods-Daangn-clone.release.xcconfig"; sourceTree = "<group>"; };
+		AB0F7DF1AF6CE52786075DEB /* Pods_Daangn_clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Daangn_clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C007F52348DF6E5DB4C16EC5 /* Pods-Daangn-clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daangn-clone.debug.xcconfig"; path = "Target Support Files/Pods-Daangn-clone/Pods-Daangn-clone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A30C14076908B008FB5452 /* Pods_Daangn_clone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44FEF507F84C948E40931037 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB0F7DF1AF6CE52786075DEB /* Pods_Daangn_clone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4950A9EE42EA6B61B363A4EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C007F52348DF6E5DB4C16EC5 /* Pods-Daangn-clone.debug.xcconfig */,
+				7E80C16FF481285C0D3FE07F /* Pods-Daangn-clone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6EA59722284548E700DD559A = {
 			isa = PBXGroup;
 			children = (
 				6EA5972D284548E700DD559A /* Daangn-clone */,
 				6EA5972C284548E700DD559A /* Products */,
+				4950A9EE42EA6B61B363A4EB /* Pods */,
+				44FEF507F84C948E40931037 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				6EA59732284548E700DD559A /* ViewController.swift */,
+				6EBE3DD02849737C00E9B255 /* LifeViewController.swift */,
+				6EBE3DD92849C23900E9B255 /* LifeCell */,
 				6EBE3DCB2848824A00E9B255 /* HomeCell */,
 			);
 			path = ViewController;
@@ -87,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				6EA5974528454A7A00DD559A /* HomeModel.swift */,
+				6EBE3DD62849BECD00E9B255 /* LifeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,6 +139,17 @@
 			path = HomeCell;
 			sourceTree = "<group>";
 		};
+		6EBE3DD92849C23900E9B255 /* LifeCell */ = {
+			isa = PBXGroup;
+			children = (
+				6EBE3DD228497C9100E9B255 /* LifeCollectionViewCell.swift */,
+				6EBE3DD328497C9100E9B255 /* LifeCollectionViewCell.xib */,
+				6EBE3DDA2849C32800E9B255 /* LifeTableViewCell.swift */,
+				6EBE3DDB2849C32800E9B255 /* LifeTableViewCell.xib */,
+			);
+			path = LifeCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EA5973F284548E800DD559A /* Build configuration list for PBXNativeTarget "Daangn-clone" */;
 			buildPhases = (
+				4BF4DC1255B9DBC1DA823162 /* [CP] Check Pods Manifest.lock */,
 				6EA59727284548E700DD559A /* Sources */,
 				6EA59728284548E700DD559A /* Frameworks */,
 				6EA59729284548E700DD559A /* Resources */,
+				95BD070A5AE6B57227E1B084 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,6 +196,9 @@
 				Base,
 			);
 			mainGroup = 6EA59722284548E700DD559A;
+			packageReferences = (
+				6EBE3DDE2849E98800E9B255 /* XCRemoteSwiftPackageReference "Floaty" */,
+			);
 			productRefGroup = 6EA5972C284548E700DD559A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -159,21 +214,69 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EA5973B284548E800DD559A /* LaunchScreen.storyboard in Resources */,
+				6EBE3DDD2849C32800E9B255 /* LifeTableViewCell.xib in Resources */,
 				6EA59738284548E800DD559A /* Assets.xcassets in Resources */,
 				6EBE3DCF28489CA200E9B255 /* HomeTableViewCell.xib in Resources */,
 				6EA59736284548E700DD559A /* Main.storyboard in Resources */,
+				6EBE3DD528497C9100E9B255 /* LifeCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BF4DC1255B9DBC1DA823162 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Daangn-clone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95BD070A5AE6B57227E1B084 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Daangn-clone/Pods-Daangn-clone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Daangn-clone/Pods-Daangn-clone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Daangn-clone/Pods-Daangn-clone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6EA59727284548E700DD559A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EBE3DD428497C9100E9B255 /* LifeCollectionViewCell.swift in Sources */,
 				6EA5974628454A7A00DD559A /* HomeModel.swift in Sources */,
 				6EBE3DCE28489CA200E9B255 /* HomeTableViewCell.swift in Sources */,
+				6EBE3DDC2849C32800E9B255 /* LifeTableViewCell.swift in Sources */,
+				6EBE3DD72849BECD00E9B255 /* LifeModel.swift in Sources */,
+				6EBE3DD12849737C00E9B255 /* LifeViewController.swift in Sources */,
 				6EA59733284548E700DD559A /* ViewController.swift in Sources */,
 				6EA5972F284548E700DD559A /* AppDelegate.swift in Sources */,
 				6EA59731284548E700DD559A /* SceneDelegate.swift in Sources */,
@@ -318,6 +421,7 @@
 		};
 		6EA59740284548E800DD559A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C007F52348DF6E5DB4C16EC5 /* Pods-Daangn-clone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -346,6 +450,7 @@
 		};
 		6EA59741284548E800DD559A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E80C16FF481285C0D3FE07F /* Pods-Daangn-clone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -394,6 +499,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6EBE3DDE2849E98800E9B255 /* XCRemoteSwiftPackageReference "Floaty" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kciter/Floaty.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 6EA59723284548E700DD559A /* Project object */;
 }
