@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E6A492C284ABDE70062FEC4 /* AddMainCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6A492B284ABDE70062FEC4 /* AddMainCellViewController.swift */; };
 		6EA5972F284548E700DD559A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA5972E284548E700DD559A /* AppDelegate.swift */; };
 		6EA59731284548E700DD559A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA59730284548E700DD559A /* SceneDelegate.swift */; };
 		6EA59733284548E700DD559A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA59732284548E700DD559A /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E6A492B284ABDE70062FEC4 /* AddMainCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMainCellViewController.swift; sourceTree = "<group>"; };
 		6EA5972B284548E700DD559A /* Daangn-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daangn-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EA5972E284548E700DD559A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EA59730284548E700DD559A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				6EA59732284548E700DD559A /* ViewController.swift */,
+				6E6A492B284ABDE70062FEC4 /* AddMainCellViewController.swift */,
 				6EBE3DD02849737C00E9B255 /* LifeViewController.swift */,
 				6EBE3DD92849C23900E9B255 /* LifeCell */,
 				6EBE3DCB2848824A00E9B255 /* HomeCell */,
@@ -197,7 +200,6 @@
 			);
 			mainGroup = 6EA59722284548E700DD559A;
 			packageReferences = (
-				6EBE3DDE2849E98800E9B255 /* XCRemoteSwiftPackageReference "Floaty" */,
 			);
 			productRefGroup = 6EA5972C284548E700DD559A /* Products */;
 			projectDirPath = "";
@@ -272,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EBE3DD428497C9100E9B255 /* LifeCollectionViewCell.swift in Sources */,
+				6E6A492C284ABDE70062FEC4 /* AddMainCellViewController.swift in Sources */,
 				6EA5974628454A7A00DD559A /* HomeModel.swift in Sources */,
 				6EBE3DCE28489CA200E9B255 /* HomeTableViewCell.swift in Sources */,
 				6EBE3DDC2849C32800E9B255 /* LifeTableViewCell.swift in Sources */,
@@ -499,17 +502,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		6EBE3DDE2849E98800E9B255 /* XCRemoteSwiftPackageReference "Floaty" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kciter/Floaty.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.2.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 6EA59723284548E700DD559A /* Project object */;
 }

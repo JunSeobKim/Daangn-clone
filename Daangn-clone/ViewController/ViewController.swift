@@ -19,9 +19,12 @@ class ViewController: UIViewController, FloatyDelegate {
         let leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "main-logo"), style: .plain, target: self, action: nil)
         leftBarButtonItem.tintColor = UIColor.black
         navigationItem.leftBarButtonItem = leftBarButtonItem
-        
         setupTableView()
         layoutFAB()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        homeTableView.reloadData()
     }
     
     private func setupTableView() {
@@ -43,9 +46,11 @@ class ViewController: UIViewController, FloatyDelegate {
 //        floaty.layer.shadowPath = UIBezierPath(rect: floaty.bounds).cgPath
         floaty.layer.shadowPath = UIBezierPath(roundedRect: floaty.bounds, cornerRadius: floaty.layer.cornerRadius).cgPath
         floaty.addItem("내 물건 팔기", icon: UIImage(named: "sellItem")) { item in
-          let alert = UIAlertController(title: "하는중", message: "아직 다 못함 ㅠ", preferredStyle: .alert)
-          alert.addAction(UIAlertAction(title: "학인", style: .default, handler: nil))
-          self.present(alert, animated: true, completion: nil)
+            let AddMainCellViewController = self.storyboard?.instantiateViewController(withIdentifier: "AddMainCellViewController") as! AddMainCellViewController
+            AddMainCellViewController.homeModel = self.homeModel
+            AddMainCellViewController.delegate = self
+            AddMainCellViewController.modalPresentationStyle = .fullScreen
+            self.present(AddMainCellViewController, animated: true)
         }
         
         floaty.paddingY += tabBarController!.tabBar.bounds.size.height
@@ -75,5 +80,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             homeModel.deleteCellData(index: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
+    }
+}
+
+extension ViewController: NewDataToPreviousVCDelegate {
+    func newData(data: HomeModel) {
+        homeModel = data
     }
 }
